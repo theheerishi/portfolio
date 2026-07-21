@@ -33,7 +33,7 @@ export default function WritingClient({ articles }: { articles: Article[] }) {
         <BlurFade delay={0.1} inView>
           <div className="flex justify-between items-end mb-12 md:mb-16">
             <div>
-              <span className="font-sans text-xs tracking-widest text-[#777] uppercase block mb-4">
+              <span className="font-sans text-xs tracking-widest text-[#9a9a94] uppercase block mb-4">
                 Writing
               </span>
               <TextAnimate
@@ -49,7 +49,7 @@ export default function WritingClient({ articles }: { articles: Article[] }) {
               href="https://rishipachore.substack.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:inline-flex items-center gap-2 font-sans text-[#888] text-sm hover:text-[#e8e6e0] transition-colors duration-200 group"
+              className="hidden md:inline-flex items-center gap-2 font-sans text-[#ababa5] text-sm hover:text-[#e8e6e0] transition-colors duration-200 group"
             >
               All articles
               <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
@@ -60,7 +60,7 @@ export default function WritingClient({ articles }: { articles: Article[] }) {
         <div className="flex flex-col gap-4">
           {articles.length === 0 ? (
             <BlurFade delay={0.15} inView>
-              <p className="font-sans text-[#666] text-sm">No articles yet — check back soon.</p>
+              <p className="font-sans text-[#8a8a84] text-sm">No articles yet — check back soon.</p>
             </BlurFade>
           ) : (
             articles.map((article, idx) => (
@@ -79,7 +79,7 @@ export default function WritingClient({ articles }: { articles: Article[] }) {
                     )}
 
                     <div className="flex md:flex-col gap-3 md:gap-2 md:min-w-[120px]">
-                      <span className="font-sans text-[#777] text-xs tracking-widest uppercase">
+                      <span className="font-sans text-[#9a9a94] text-xs tracking-widest uppercase">
                         {article.date}
                       </span>
                       <span className="font-sans text-[10px] tracking-widest text-[#a78bfa] uppercase border border-[#a78bfa]/30 px-2 py-0.5 w-fit">
@@ -95,12 +95,12 @@ export default function WritingClient({ articles }: { articles: Article[] }) {
                       >
                         {article.title}
                       </HyperText>
-                      <p className="font-sans font-light text-[#888] text-sm leading-relaxed">
+                      <p className="font-sans font-light text-[#ababa5] text-sm leading-relaxed">
                         {article.description}
                       </p>
                     </div>
 
-                    <span className="hidden md:block text-[#666] group-hover:text-[#a78bfa] group-hover:translate-x-1 transition-all duration-300 text-xl flex-shrink-0">
+                    <span className="hidden md:block text-[#8a8a84] group-hover:text-[#a78bfa] group-hover:translate-x-1 transition-all duration-300 text-xl flex-shrink-0">
                       →
                     </span>
                   </div>
@@ -113,8 +113,8 @@ export default function WritingClient({ articles }: { articles: Article[] }) {
           <BlurFade delay={0.3} inView>
             <div className="border border-dashed border-[#1e1e1e] bg-[#0a0a0a]/60 backdrop-blur-sm p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div>
-                <p className="font-serif text-[#999] text-lg font-light">More on the way</p>
-                <p className="font-sans text-[#666] text-sm mt-1">
+                <p className="font-serif text-[#bebeb8] text-lg font-light">More on the way</p>
+                <p className="font-sans text-[#8a8a84] text-sm mt-1">
                   Subscribe on Substack — growth, GTM, and building from 0→1.
                 </p>
               </div>

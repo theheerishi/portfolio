@@ -7,7 +7,7 @@ const socials = [
 export default function Footer() {
   return (
     <footer className="px-6 md:px-12 py-8 border-t border-[#1e1e1e] flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-      <span className="font-sans text-xs text-[#666]">
+      <span className="font-sans text-xs text-[#8a8a84]">
         © {new Date().getFullYear()} Hrishikesh Pachore
       </span>
 

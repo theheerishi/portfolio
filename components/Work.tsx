@@ -169,7 +169,7 @@ export default function Work() {
               Selected Work
             </TextAnimate>
           </div>
-          <p className="font-sans font-light text-[#888] text-base max-w-xl mb-12 md:mb-16">
+          <p className="font-sans font-light text-[#ababa5] text-base max-w-xl mb-12 md:mb-16">
             Five projects, real numbers. Click any card for the full story.
           </p>
         </BlurFade>
@@ -198,20 +198,20 @@ export default function Work() {
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="flex justify-between items-end">
                     <div>
-                      <p className="font-sans text-[#888] text-xs tracking-widest uppercase mb-1">{project.category} · {project.year}</p>
+                      <p className="font-sans text-[#ababa5] text-xs tracking-widest uppercase mb-1">{project.category} · {project.year}</p>
                       <h3 className="font-serif font-light text-[#e8e6e0] text-xl md:text-2xl group-hover:translate-x-1 transition-transform duration-300 mb-2">
                         {project.title}
                       </h3>
                       <p className="font-sans text-[#a78bfa] text-sm font-light">{project.detail}</p>
                       <div className="flex flex-wrap gap-2 mt-3">
                         {project.tags.map((tag) => (
-                          <span key={tag} className="font-sans text-[10px] tracking-widest text-[#888] uppercase border border-[#2a2a2a] bg-[#0c0c0c]/80 backdrop-blur-sm px-2 py-0.5">
+                          <span key={tag} className="font-sans text-[10px] tracking-widest text-[#ababa5] uppercase border border-[#2a2a2a] bg-[#0c0c0c]/80 backdrop-blur-sm px-2 py-0.5">
                             {tag}
                           </span>
                         ))}
                       </div>
                     </div>
-                    <span className="text-[#666] group-hover:text-[#a78bfa] group-hover:translate-x-1 transition-all duration-300 text-xl flex-shrink-0 ml-4">↗</span>
+                    <span className="text-[#8a8a84] group-hover:text-[#a78bfa] group-hover:translate-x-1 transition-all duration-300 text-xl flex-shrink-0 ml-4">↗</span>
                   </div>
                 </div>
 
@@ -256,13 +256,13 @@ export default function Work() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-[#0e0e0e]/40 to-transparent" />
                 <button
                   onClick={close}
-                  className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center bg-[#0c0c0c]/80 backdrop-blur-sm border border-[#2a2a2a] text-[#999] hover:text-[#e8e6e0] hover:border-[#a78bfa]/50 transition-colors duration-200 text-lg"
+                  className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center bg-[#0c0c0c]/80 backdrop-blur-sm border border-[#2a2a2a] text-[#bebeb8] hover:text-[#e8e6e0] hover:border-[#a78bfa]/50 transition-colors duration-200 text-lg"
                   aria-label="Close"
                 >
                   ✕
                 </button>
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                  <p className="font-sans text-[#999] text-xs tracking-widest uppercase mb-2">
+                  <p className="font-sans text-[#bebeb8] text-xs tracking-widest uppercase mb-2">
                     {active.category} · {active.year}
                   </p>
                   <h3 className="font-serif font-light text-[#e8e6e0] text-3xl md:text-5xl">
@@ -277,21 +277,21 @@ export default function Work() {
                   {active.results.map((r) => (
                     <div key={r.label} className="bg-[#0c0c0c] px-4 py-5 text-center">
                       <div className="font-serif text-[#a78bfa] text-xl md:text-3xl font-light">{r.value}</div>
-                      <div className="font-sans text-[#666] text-[9px] md:text-[10px] tracking-widest uppercase mt-1">{r.label}</div>
+                      <div className="font-sans text-[#8a8a84] text-[9px] md:text-[10px] tracking-widest uppercase mt-1">{r.label}</div>
                     </div>
                   ))}
                 </div>
 
                 <div>
-                  <span className="font-sans text-xs tracking-widest text-[#777] uppercase block mb-3">Overview</span>
-                  <p className="font-sans font-light text-[#bbb] text-base leading-relaxed">{active.overview}</p>
+                  <span className="font-sans text-xs tracking-widest text-[#9a9a94] uppercase block mb-3">Overview</span>
+                  <p className="font-sans font-light text-[#d2d2cc] text-base leading-relaxed">{active.overview}</p>
                 </div>
 
                 <div>
-                  <span className="font-sans text-xs tracking-widest text-[#777] uppercase block mb-3">Approach</span>
+                  <span className="font-sans text-xs tracking-widest text-[#9a9a94] uppercase block mb-3">Approach</span>
                   <ul className="flex flex-col gap-3">
                     {active.approach.map((a, i) => (
-                      <li key={i} className="flex gap-3 font-sans font-light text-[#999] text-sm leading-relaxed">
+                      <li key={i} className="flex gap-3 font-sans font-light text-[#bebeb8] text-sm leading-relaxed">
                         <span className="text-[#a78bfa] flex-shrink-0 mt-0.5">→</span>
                         {a}
                       </li>
@@ -301,7 +301,7 @@ export default function Work() {
 
                 <div className="flex flex-wrap gap-2 pb-2">
                   {active.tags.map((tag) => (
-                    <span key={tag} className="font-sans text-[10px] tracking-widest text-[#888] uppercase border border-[#2a2a2a] px-2.5 py-1">
+                    <span key={tag} className="font-sans text-[10px] tracking-widest text-[#ababa5] uppercase border border-[#2a2a2a] px-2.5 py-1">
                       {tag}
                     </span>
                   ))}

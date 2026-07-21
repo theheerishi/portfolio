@@ -81,7 +81,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-[2] bg-gradient-to-b from-[#0c0c0c] via-transparent to-[#0c0c0c]/80 pointer-events-none" />
 
       {/* Top row */}
-      <div className="relative z-10 flex justify-between items-center font-sans text-xs tracking-widest text-[#777] uppercase">
+      <div className="relative z-10 flex justify-between items-center font-sans text-xs tracking-widest text-[#9a9a94] uppercase">
         <span className="hero-tag">Pune, IN</span>
         <div className="hero-tag">
           <AnimatedShinyText className="font-sans text-xs tracking-widest uppercase">
@@ -93,7 +93,7 @@ export default function Hero() {
 
       {/* Centre */}
       <div className="relative z-10 flex flex-col gap-8 py-10">
-        <p className={`font-sans text-sm text-[#777] tracking-widest uppercase transition-all duration-300 ${greetingVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}>
+        <p className={`font-sans text-sm text-[#9a9a94] tracking-widest uppercase transition-all duration-300 ${greetingVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}>
           {greetings[greetingIndex]}
         </p>
 
@@ -144,7 +144,7 @@ export default function Hero() {
         {/* Typing subtitle */}
         {revealed && (
           <TypingAnimation
-            className="font-sans font-light text-[#999] text-base md:text-lg"
+            className="font-sans font-light text-[#bebeb8] text-base md:text-lg"
             duration={30}
             delay={400}
           >
@@ -162,7 +162,7 @@ export default function Hero() {
                   <NumberTicker value={stat.value} delay={0.5} className="text-[#e8e6e0]" />
                   {stat.suffix && <span>{stat.suffix}</span>}
                 </span>
-                <span className="font-sans text-[#666] text-xs tracking-widest uppercase">{stat.label}</span>
+                <span className="font-sans text-[#8a8a84] text-xs tracking-widest uppercase">{stat.label}</span>
               </div>
             ))}
           </div>
@@ -176,7 +176,7 @@ export default function Hero() {
             View Work →
           </ShimmerButton>
         </a>
-        <div className="hero-cta flex items-center gap-2 font-sans text-xs text-[#666] tracking-widest uppercase">
+        <div className="hero-cta flex items-center gap-2 font-sans text-xs text-[#8a8a84] tracking-widest uppercase">
           <span>Scroll</span>
           <span className="inline-block animate-bounce">↓</span>
         </div>

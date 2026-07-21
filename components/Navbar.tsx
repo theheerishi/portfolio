@@ -61,7 +61,7 @@ export default function Navbar() {
           <li key={link.href}>
             <a
               href={link.href}
-              className="relative font-sans text-[#888] text-sm tracking-wide hover:text-[#a78bfa] transition-colors duration-200 group"
+              className="relative font-sans text-[#ababa5] text-sm tracking-wide hover:text-[#a78bfa] transition-colors duration-200 group"
             >
               {link.label}
               <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-[#a78bfa] group-hover:w-full transition-all duration-300 ease-out" />

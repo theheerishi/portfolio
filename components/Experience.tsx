@@ -85,26 +85,6 @@ const roles: Role[] = [
     image: "/img/exp-herenow.webp",
     accent: "#f472b6",
   },
-  {
-    company: "Game Dome",
-    title: "Jr. Marketing Assistant",
-    period: "Jan — Aug 2021",
-    location: "Pune, IN",
-    summary:
-      "First marketing role — social strategy and CRM automation for a gaming venue.",
-    bullets: [
-      "Developed and executed a social media strategy that increased engagement 40% and grew followers 25% within three months.",
-      "Managed Zoho CRM workflows and automated email campaigns — improving lead-management efficiency and lifting qualified leads.",
-      "Monitored social analytics to track performance and identify growth opportunities.",
-    ],
-    stats: [
-      { value: "+40%", label: "Engagement" },
-      { value: "+25%", label: "Followers" },
-    ],
-    tags: ["Social Media", "Zoho CRM", "Email Automation"],
-    image: "/img/exp-gamedome.webp",
-    accent: "#facc15",
-  },
 ];
 
 export default function Experience() {
@@ -122,7 +102,7 @@ export default function Experience() {
 
       <div className="relative z-10">
         <BlurFade delay={0.1} inView>
-          <span className="font-sans text-xs tracking-widest text-[#777] uppercase block mb-4">
+          <span className="font-sans text-xs tracking-widest text-[#9a9a94] uppercase block mb-4">
             Experience
           </span>
           <TextAnimate
@@ -133,8 +113,8 @@ export default function Experience() {
           >
             Where I&rsquo;ve worked
           </TextAnimate>
-          <p className="font-sans font-light text-[#888] text-base max-w-xl mb-12 md:mb-16">
-            Four roles, two countries, one throughline — taking things from{" "}
+          <p className="font-sans font-light text-[#b8b8b2] text-base max-w-xl mb-12 md:mb-16">
+            Three roles, two countries, one throughline — taking things from{" "}
             <span className="text-[#a78bfa]">zero to one</span>. Click a role to
             expand it.
           </p>
@@ -166,21 +146,21 @@ export default function Experience() {
                         <h3 className="font-serif font-light text-[#e8e6e0] text-2xl md:text-4xl group-hover:translate-x-1 transition-transform duration-300">
                           {role.company}
                         </h3>
-                        <p className="font-sans text-[#888] text-xs md:text-sm tracking-wide mt-1 truncate">
+                        <p className="font-sans text-[#ababa5] text-xs md:text-sm tracking-wide mt-1 truncate">
                           {role.title}
                         </p>
                       </div>
                     </div>
                     <div className="hidden md:flex flex-col items-end flex-shrink-0">
-                      <span className="font-sans text-[#999] text-sm">{role.period}</span>
-                      <span className="font-sans text-[#666] text-xs tracking-widest uppercase mt-0.5">
+                      <span className="font-sans text-[#bebeb8] text-sm">{role.period}</span>
+                      <span className="font-sans text-[#8a8a84] text-xs tracking-widest uppercase mt-0.5">
                         {role.location}
                       </span>
                     </div>
                     <motion.span
                       animate={{ rotate: isOpen ? 45 : 0 }}
                       transition={{ duration: 0.3 }}
-                      className="text-[#666] text-2xl font-light flex-shrink-0 w-8 h-8 flex items-center justify-center"
+                      className="text-[#8a8a84] text-2xl font-light flex-shrink-0 w-8 h-8 flex items-center justify-center"
                       style={{ color: isOpen ? role.accent : undefined }}
                     >
                       +
@@ -199,7 +179,7 @@ export default function Experience() {
                       >
                         <div className="px-2 md:px-4 pb-8 md:pb-10 grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-8">
                           <div>
-                            <p className="font-sans font-light text-[#bbb] text-base leading-relaxed mb-6 max-w-2xl">
+                            <p className="font-sans font-light text-[#d2d2cc] text-base leading-relaxed mb-6 max-w-2xl">
                               {role.summary}
                             </p>
                             <ul className="flex flex-col gap-3 mb-6">
@@ -209,7 +189,7 @@ export default function Experience() {
                                   initial={{ opacity: 0, x: -12 }}
                                   animate={{ opacity: 1, x: 0 }}
                                   transition={{ delay: 0.15 + i * 0.07, duration: 0.4 }}
-                                  className="flex gap-3 font-sans font-light text-[#999] text-sm leading-relaxed max-w-2xl"
+                                  className="flex gap-3 font-sans font-light text-[#bebeb8] text-sm leading-relaxed max-w-2xl"
                                 >
                                   <span style={{ color: role.accent }} className="flex-shrink-0 mt-0.5">→</span>
                                   {b}
@@ -220,7 +200,7 @@ export default function Experience() {
                               {role.tags.map((tag) => (
                                 <span
                                   key={tag}
-                                  className="font-sans text-[10px] tracking-widest text-[#888] uppercase border border-[#2a2a2a] px-2.5 py-1"
+                                  className="font-sans text-[10px] tracking-widest text-[#ababa5] uppercase border border-[#2a2a2a] px-2.5 py-1"
                                 >
                                   {tag}
                                 </span>
@@ -252,7 +232,7 @@ export default function Experience() {
                                   >
                                     {s.value}
                                   </div>
-                                  <div className="font-sans text-[#666] text-[9px] tracking-widest uppercase mt-1">
+                                  <div className="font-sans text-[#8a8a84] text-[9px] tracking-widest uppercase mt-1">
                                     {s.label}
                                   </div>
                                 </div>

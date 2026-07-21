@@ -38,7 +38,7 @@ export default function Contact() {
 
         <div className="relative z-10 flex flex-col gap-6">
           <BlurFade delay={0.1} inView>
-            <span className="font-sans text-xs tracking-widest text-[#777] uppercase">Contact</span>
+            <span className="font-sans text-xs tracking-widest text-[#9a9a94] uppercase">Contact</span>
           </BlurFade>
 
           <BlurFade delay={0.2} inView>
@@ -60,7 +60,7 @@ export default function Contact() {
           </BlurFade>
 
           <BlurFade delay={0.3} inView>
-            <p className="font-sans font-light text-[#999] text-base md:text-lg leading-relaxed max-w-lg">
+            <p className="font-sans font-light text-[#bebeb8] text-base md:text-lg leading-relaxed max-w-lg">
               Open to full-time roles, consulting, and project work in growth, GTM,
               and brand strategy. I work best with teams building something new —
               from <span className="text-[#a78bfa]">0→1</span>.
@@ -74,7 +74,7 @@ export default function Contact() {
         {/* Contact details */}
         <div className="px-6 md:px-12 py-16 flex flex-col gap-8 border-b md:border-b-0 md:border-r border-[#1e1e1e]">
           <BlurFade delay={0.1} inView>
-            <span className="font-sans text-xs tracking-widest text-[#777] uppercase">Get in touch</span>
+            <span className="font-sans text-xs tracking-widest text-[#9a9a94] uppercase">Get in touch</span>
           </BlurFade>
 
           {contactMethods.map((method, idx) => (

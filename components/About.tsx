@@ -29,20 +29,20 @@ export default function About() {
         {/* Left */}
         <div className="flex flex-col gap-8">
           <BlurFade delay={0.1} inView>
-            <span className="font-sans text-xs tracking-widest text-[#777] uppercase">About</span>
+            <span className="font-sans text-xs tracking-widest text-[#9a9a94] uppercase">About</span>
           </BlurFade>
 
           <BlurFade delay={0.2} inView>
             <TextAnimate animation="blurInUp" by="word" startOnView className="font-serif font-light text-[#e8e6e0] text-4xl md:text-6xl leading-tight block">
               Growth meets
             </TextAnimate>
-            <TextAnimate animation="blurInUp" by="word" startOnView className="font-serif font-light text-[#777] text-4xl md:text-6xl leading-tight block" delay={0.15}>
+            <TextAnimate animation="blurInUp" by="word" startOnView className="font-serif font-light text-[#9a9a94] text-4xl md:text-6xl leading-tight block" delay={0.15}>
               execution.
             </TextAnimate>
           </BlurFade>
 
           <BlurFade delay={0.3} inView>
-            <p className="font-sans font-light text-[#999] text-base leading-relaxed max-w-md">
+            <p className="font-sans font-light text-[#bebeb8] text-base leading-relaxed max-w-md">
               I&rsquo;m Rishi — a Growth & GTM Marketer based in Pune, working
               across Taiwan, UAE, Singapore, and Leeds. I help teams build from{" "}
               <span className="text-[#a78bfa]">0→1</span>: first customer,
@@ -51,7 +51,7 @@ export default function About() {
           </BlurFade>
 
           <BlurFade delay={0.35} inView>
-            <p className="font-sans font-light text-[#888] text-base leading-relaxed max-w-md">
+            <p className="font-sans font-light text-[#ababa5] text-base leading-relaxed max-w-md">
               From hardware launches and pre-seed fundraising to organic growth
               and e-commerce storefronts. Currently Head of Marketing at Alaric Design.
             </p>
@@ -67,7 +67,7 @@ export default function About() {
                     <NumberTicker value={a.value} delay={0.5} className="text-[#e8e6e0]" />
                     <span>{a.suffix}</span>
                   </div>
-                  <span className="font-sans text-[#777] text-[10px] tracking-widest uppercase">{a.label}</span>
+                  <span className="font-sans text-[#9a9a94] text-[10px] tracking-widest uppercase">{a.label}</span>
                 </div>
               ))}
             </div>
@@ -75,25 +75,25 @@ export default function About() {
 
           {/* Education */}
           <BlurFade delay={0.4} inView>
-            <div className="flex flex-col gap-1 font-sans text-[#777] text-sm border-l border-[#1e1e1e] pl-4">
-              <span className="text-[#666] text-[10px] tracking-widest uppercase mb-2">Education</span>
-              <span className="text-[#999]">MSc International Marketing Management — University of Leeds, UK</span>
-              <span className="text-[#999]">Bachelor&rsquo;s, Business & Hospitality Management — Pune University · 1st Class</span>
-              <span className="text-[#666] text-xs mt-1">Research published on ScienceDirect</span>
+            <div className="flex flex-col gap-1 font-sans text-[#9a9a94] text-sm border-l border-[#1e1e1e] pl-4">
+              <span className="text-[#8a8a84] text-[10px] tracking-widest uppercase mb-2">Education</span>
+              <span className="text-[#bebeb8]">MSc International Marketing Management — University of Leeds, UK</span>
+              <span className="text-[#bebeb8]">Bachelor&rsquo;s, Business & Hospitality Management — Pune University · 1st Class</span>
+              <span className="text-[#8a8a84] text-xs mt-1">Research published on ScienceDirect</span>
             </div>
           </BlurFade>
 
           {/* Services */}
           <BlurFade delay={0.45} inView>
             <div className="flex flex-col">
-              <span className="font-sans text-xs tracking-widest text-[#777] uppercase mb-4">Services</span>
+              <span className="font-sans text-xs tracking-widest text-[#9a9a94] uppercase mb-4">Services</span>
               {services.map((s, i) => (
                 <BlurFade key={s} delay={0.5 + i * 0.07} inView>
                   <div className="flex items-center justify-between py-4 border-b border-[#1e1e1e] group hover:border-[#a78bfa]/30 transition-colors duration-300">
                     <span className="font-serif text-[#e8e6e0] text-xl md:text-2xl font-light group-hover:text-[#a78bfa] transition-colors duration-300">
                       {s}
                     </span>
-                    <span className="text-[#666] group-hover:text-[#a78bfa] group-hover:translate-x-1 transition-all duration-200">→</span>
+                    <span className="text-[#8a8a84] group-hover:text-[#a78bfa] group-hover:translate-x-1 transition-all duration-200">→</span>
                   </div>
                 </BlurFade>
               ))}
@@ -129,14 +129,14 @@ export default function About() {
                 <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0c0c0c] to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <p className="font-sans text-[#e8e6e0] text-sm font-light">Hrishikesh (Rishi) Pachore</p>
-                  <p className="font-sans text-[#888] text-xs tracking-widest uppercase mt-0.5">Head of Marketing · Alaric Design</p>
+                  <p className="font-sans text-[#ababa5] text-xs tracking-widest uppercase mt-0.5">Head of Marketing · Alaric Design</p>
                 </div>
               </div>
             </ShineBorder>
 
             {/* Quick facts */}
             <div className="border border-[#1e1e1e] p-5 flex flex-col gap-3">
-              <p className="font-sans text-[10px] tracking-widest text-[#666] uppercase">Quick facts</p>
+              <p className="font-sans text-[10px] tracking-widest text-[#8a8a84] uppercase">Quick facts</p>
               {[
                 ["Now", "Head of Marketing · Alaric Design"],
                 ["Based", "Pune — working across TW, UAE, SG, UK"],
@@ -144,8 +144,8 @@ export default function About() {
                 ["Awards", "Red Dot Design Concept 2025 (contributor)"],
               ].map(([k, v]) => (
                 <div key={k} className="flex gap-3 font-sans text-sm">
-                  <span className="text-[#666] w-16 flex-shrink-0 text-[10px] pt-1 tracking-widest uppercase">{k}</span>
-                  <span className="text-[#999] font-light">{v}</span>
+                  <span className="text-[#8a8a84] w-16 flex-shrink-0 text-[10px] pt-1 tracking-widest uppercase">{k}</span>
+                  <span className="text-[#bebeb8] font-light">{v}</span>
                 </div>
               ))}
             </div>
