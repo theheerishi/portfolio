@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { ShineBorder } from "@/components/ui/shine-border";
-import { Marquee } from "@/components/ui/marquee";
 import { NumberTicker } from "@/components/ui/number-ticker";
 import { TextAnimate } from "@/components/ui/text-animate";
 import { Ripple } from "@/components/ui/ripple";
@@ -11,13 +10,8 @@ const services = [
   "Go-to-Market Strategy",
   "Organic Growth & SEO",
   "Brand & Positioning",
+  "Investor Materials & Fundraising",
   "E-Commerce Build",
-];
-
-const tools = [
-  "GA4", "SQL", "Tableau", "Power BI", "HubSpot",
-  "Salesforce", "Marketo", "Framer", "Shopify", "Figma",
-  "SEMrush", "Google Ads", "Notion", "Airtable",
 ];
 
 const achievements = [
@@ -83,9 +77,9 @@ export default function About() {
           <BlurFade delay={0.4} inView>
             <div className="flex flex-col gap-1 font-sans text-[#777] text-sm border-l border-[#1e1e1e] pl-4">
               <span className="text-[#666] text-[10px] tracking-widest uppercase mb-2">Education</span>
-              <span className="text-[#999]">MSc International Marketing — University of Leeds</span>
-              <span className="text-[#999]">BHMCT — Magna Cum Laude</span>
-              <span className="text-[#666] text-xs mt-1">Published on ScienceDirect</span>
+              <span className="text-[#999]">MSc International Marketing Management — University of Leeds, UK</span>
+              <span className="text-[#999]">Bachelor&rsquo;s, Business & Hospitality Management — Pune University · 1st Class</span>
+              <span className="text-[#666] text-xs mt-1">Research published on ScienceDirect</span>
             </div>
           </BlurFade>
 
@@ -140,19 +134,20 @@ export default function About() {
               </div>
             </ShineBorder>
 
-            {/* Tools marquee */}
-            <div className="border border-[#1e1e1e] py-4 overflow-hidden">
-              <p className="font-sans text-[10px] tracking-widest text-[#666] uppercase px-4 mb-3">Tools & Stack</p>
-              <Marquee pauseOnHover className="[--duration:25s]">
-                {tools.map((tool) => (
-                  <span
-                    key={tool}
-                    className="font-sans text-xs text-[#888] tracking-widest uppercase border border-[#1e1e1e] px-3 py-1 mx-2 hover:text-[#a78bfa] hover:border-[#a78bfa]/30 transition-colors duration-200"
-                  >
-                    {tool}
-                  </span>
-                ))}
-              </Marquee>
+            {/* Quick facts */}
+            <div className="border border-[#1e1e1e] p-5 flex flex-col gap-3">
+              <p className="font-sans text-[10px] tracking-widest text-[#666] uppercase">Quick facts</p>
+              {[
+                ["Now", "Head of Marketing · Alaric Design"],
+                ["Based", "Pune — working across TW, UAE, SG, UK"],
+                ["Open to", "Full-time · consulting · project work"],
+                ["Awards", "Red Dot Design Concept 2025 (contributor)"],
+              ].map(([k, v]) => (
+                <div key={k} className="flex gap-3 font-sans text-sm">
+                  <span className="text-[#666] w-16 flex-shrink-0 text-[10px] pt-1 tracking-widest uppercase">{k}</span>
+                  <span className="text-[#999] font-light">{v}</span>
+                </div>
+              ))}
             </div>
           </div>
         </BlurFade>

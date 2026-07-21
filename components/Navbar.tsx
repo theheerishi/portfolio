@@ -4,8 +4,10 @@ import gsap from "gsap";
 
 const links = [
   { label: "Work", href: "#work" },
-  { label: "Writing", href: "#writing" },
+  { label: "Experience", href: "#experience" },
+  { label: "Skills", href: "#skills" },
   { label: "About", href: "#about" },
+  { label: "Writing", href: "#writing" },
   { label: "Contact", href: "#contact" },
 ];
 
